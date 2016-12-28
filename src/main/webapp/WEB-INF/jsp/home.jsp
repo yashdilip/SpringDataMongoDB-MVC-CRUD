@@ -38,6 +38,7 @@
       						<th>Model</th>
       						<th>Description</th>
       						<th>Year</th>
+      						<th>Operations</th>
 					    </tr>
   					</thead>
   					<tbody>
@@ -47,12 +48,26 @@
   								<td>${car.model}</td>
   								<td>${car.description}</td>
   								<td>${car.year}</td>
+  								<td><a href="/delete/${car.id}" >Delete</a></td>
   								<td></td>
   							</tr>
   						</c:forEach>
     				</tbody>
 					</table>
     		</div>
+  		</div>
+  		<div class="row">
+  		<div class="col-sm-4">
+    			<h4>Search for Cars</h4>
+    			<form action="/search" method="post">
+    				<input type="text" id="search" name="search" placeholder="Search" value=""/> <br />  				
+    				<input type="submit" value="Search" />
+    				
+    			</form>
+      		</div>
+      		<div class="col-sm-8">
+    			
+      		</div>
   		</div>
 	</div>
 </body>

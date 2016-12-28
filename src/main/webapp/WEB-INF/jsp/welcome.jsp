@@ -19,7 +19,7 @@
 	<br> JSTL URL: ${url}
 	<br> Message: ${message} Hello this is tutorial for Spring Data
 	MongoDB
-	<a href="#" class="btn btn-primary">Primary</button>
+	<a href="#" class="btn btn-primary">Primary</a>
 </body>
 
 </html>

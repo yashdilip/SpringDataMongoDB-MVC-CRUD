@@ -8,5 +8,7 @@ public interface CarRepository {
 
 	public void create(Car car);
 	public List<Car> getAllCars();
-	
+	public Car getCarByModel(String model);
+	public List<Car> searchCar(String search);
+	public void deleteById(String id);
 }
